@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #37393d;
+  height: 100vh;
+  font-family: "Anton", sans-serif;
+  overflow: hidden;
+
+}
+
+
+.header {
+  background-color: #37393d;
+  height: 7vh;
+ width: 100vw;
+  font-size: calc(10px + 8vmin);
+  color: #37393d;
+  position: fixed;
+  top: 0;
+  left: 0vw;
+  text-align: left;
+  text-indent: 3%;
+}
+#add-a-card {
+  white-space: pre-wrap; 
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+  background-color: rgba(0, 0, 0, 0.027);
+  border-radius: 5%;
+  height: 7vh;
+  width: 20vw;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 1px 1px 2px black;
+}
+#footer {
+  position: fixed;
+  bottom: 0vh;
+}
+.textInputs{
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.027);
+color: rgb(145, 144, 144);
+}
+.decks{
+  width: 25vw;
+  height: 5vh;
+  background-color: transparent;
+  font-family: "Anton", sans-serif;
+}
+#tally-minus-button, #tally-plus-button{
+  background-color: rgba(0, 0, 0, 0.027);
+  border: none;
+  font-size: 3rem;
+  position: relative;
+  width: 15vw;
+}
+#tally-plus-button{
+  top: -5vh;
+
+}
+#tally-minus-button{
+bottom: -5vh;
+}
+#form{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#exit-button{
+  position: relative;
+  top: -12vh;
+  background-color: rgba(0, 0, 0, 0.027);
+  color: rgb(145, 144, 144);
+
+}
+#save-button{
+  position: relative;
+  bottom: -12vh;
+  background-color: rgba(0, 0, 0, 0.027);
+  color: rgb(145, 144, 144);
+}
+#card-container{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 80vh;
+  position: relative;
+  top: .5vh;
+  left: 0vw;
+  width: 96vw;
+  max-width: 1200px;
+  max-height: 600px;
+  border-radius: 1%;
+  box-shadow: 1px 1px 6px rgba(10, 10, 10, 0.5);
+  letter-spacing: .2ch;
+  background-color: rgb(43, 43, 43);
+}
+p{
+  font-size: 1.6rem;
+  line-height: .1;
+}
+#prev-button{
+  background-color: rgba(0, 0, 0, 0.027);
+  position: fixed;
+  bottom: 10vh;
+  left: 5vw;
+}
+#next-button{
+  background-color: rgba(0, 0, 0, 0.027);
+  position: fixed;
+  bottom: 10vh;
+  right: 5vw;
+}
+#edit-button{
+  background-color: rgba(0, 0, 0, 0.027);
+  position: fixed;
+  bottom: 15vh;
+  left: 5vw;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes slideLeft{
+  from {
+    left: 0vw;
+  }
+  to{
+    left: -350vw;
+  }
+}
+@keyframes slideRight{
+  from {
+    left: 0vw;
+  }
+  to{
+    left: 350vw;
+  }
+}
